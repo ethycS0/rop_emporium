@@ -1,5 +1,8 @@
-400634: mov qword ptr [r13], r12; ret;
 40069c: pop r12; pop r13; pop r14; pop r15; ret;
+400634: mov qword ptr [r13], r12; ret;
+
+400628: xor byte ptr [r15], r14b; ret;
+
 4006a3: pop rdi; ret;
 4006a2: pop r15; ret;
 
@@ -7,3 +10,5 @@ a: 01100001
 g: 01100111
 .: 00101110
 x: 01111000
+
+xorer: 00000010

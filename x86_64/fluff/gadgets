@@ -1,0 +1,16 @@
+
+
+
+400610: mov eax, 0; pop rbp; ret;
+40062a: pop rdx; pop rcx; add rcx, 0x3ef2; bextr rbx, rcx, rdx; ret;
+0x000000000040062b: pop rcx; add rcx, 0x3ef2; bextr rbx, rcx, rdx; ret;
+4006a3: pop rdi; ret;
+
+400628: xlatb; ret;
+
+
+
+400639: stosb byte ptr [rdi], al; ret;
+400295: ret;
+
+
