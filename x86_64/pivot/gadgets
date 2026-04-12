@@ -1,0 +1,21 @@
+0x0000000000400a2d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+
+
+
+0000000000400720 <foothold_function@plt>:
+  400720:       ff 25 1a 09 20 00       jmp    *0x20091a(%rip) 
+  400726:       68 05 00 00 00          push   $0x5
+  40072b:       e9 90 ff ff ff          jmp    4006c0 <.plt>
+
+  4009bb:       58                      pop    %rax
+  4009bc:       c3                      ret
+  4009bd:       48 94                   xchg   %rax,%rsp
+  4009bf:       c3                      ret
+
+0x00000000004009c4: add rax, rbp; ret;
+
+0x00000000004007c8: pop rbp; ret;
+
+0x00000000004007c1: jmp rax;
+
+0x00000000004009c0 : mov rax, qword ptr [rax] ; ret
